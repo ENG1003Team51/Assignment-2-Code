@@ -11,3 +11,10 @@ Function lists(){}
 Function searchDistination(){}
 Function travelModel(){}
 Function setMarker(){}
+
+
+//Reference     https://developers.google.com/maps/documentation/javascript/examples/directions-travel-modes
+
+//Reference     https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple 
+
+//Reference     https://developers.google.com/maps/documentation/javascript/examples/map-geolocation
