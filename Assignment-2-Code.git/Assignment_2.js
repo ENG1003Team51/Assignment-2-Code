@@ -46,6 +46,7 @@
             });
             
              var infoWindow = new google.maps.InfoWindow({map: map});
+
   
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
@@ -218,7 +219,6 @@
     </script>
   </body>
 </html>
-
 
 
 
