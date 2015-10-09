@@ -1,0 +1,13 @@
+JavaScript
+
+
+Function mainMenu(){}
+Function initMap(){}
+Function startRecordRoute(){}
+Function stopRecordRoute(){}
+Function deleteRoute(){}
+Function saveRoute(){}
+Function lists(){}
+Function searchDistination(){}
+Function travelModel(){}
+Function setMarker(){}
