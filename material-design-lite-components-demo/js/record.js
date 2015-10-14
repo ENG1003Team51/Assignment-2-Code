@@ -6,3 +6,7 @@ function initMap() {
     zoom: 17
   });
 }
+
+function doIt(){ //activated by button push..
+    console.log("doIt() started");
+}

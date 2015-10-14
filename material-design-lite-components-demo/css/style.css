@@ -8,20 +8,15 @@ main div {
 	margin: auto;
   width: 60%;
 }
-.Instructions{
-    border:1px solid #00aa00;
-   padding: 10px;
-}
-.list{
-	position: left;
-	padding: 12px;
-	color: red;
-}
+
 h4{
 	color: yellow;
+}
+h5{
+    color: yellow;
 }
 .buttons{
 	position: left;
 	padding: 1em; //vertical spacing
-	color: green;
+	color: purple;
 }

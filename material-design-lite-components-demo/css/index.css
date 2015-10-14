@@ -1,0 +1,9 @@
+.Instructions{
+    border:1px solid #00aa00;
+   padding: 10px;
+}
+.list{
+	position: left;
+	padding: 12px;
+	color: red;
+}
