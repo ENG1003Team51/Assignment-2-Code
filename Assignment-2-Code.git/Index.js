@@ -51,6 +51,15 @@ var this.map = map;
 	//self.latitude = null;
    //self.longitude = null;  
 function initMap() {
+	/*
+var latlng = new google.maps.LatLng(coords.latitude, coords.longitude);
+var myOptions = {
+   zoom: 14,    
+   center: latlng,  
+   mapTypeId: google.maps.MapTypeId.ROADMAP 
+};
+var map = new google.maps.Map(document.getElementById("map"), myOptions);
+	*/
    this.map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: -34.397, lng: 150.644},
     zoom: 6
@@ -71,9 +80,20 @@ function success(position)
 		this.accuracy = accuracy;
 		this.time = new Date();
 	}
+
+if (navigator.geolocation) {
+  	navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+  	var marker = new google.maps.Marker({
+                        position: latlng,    
+                        map: map 
+                    });
+}else{ alert("Cant support")
+	
+}
 */
   // Try HTML5 geolocation.
   if (navigator.geolocation) {
+  	//navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
     navigator.geolocation.getCurrentPosition(function(position) {
       var pos = {
         lat: position.coords.latitude,
@@ -135,6 +155,10 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 		myRoute.dateCreated = this.date;
 		return myRoute;
 	}
+	var marker = new google.maps.Marker({
+                        position: latlng,    
+                        map: map 
+                    });
 	*/
 }
     </script>
