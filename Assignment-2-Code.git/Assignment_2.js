@@ -10,7 +10,7 @@
     <div id="map"></div>
     <script type="text/javascript">
           
-        
+        //testing github changing this line - michael
         
         function mainMenu(){
             var map;

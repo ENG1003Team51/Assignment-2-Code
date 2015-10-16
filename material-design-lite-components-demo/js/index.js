@@ -1,0 +1,1 @@
+/*Script for Index page*/

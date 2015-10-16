@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>Team 051 Mobile App - Record</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/record.css">
+        <script src="../js/record.js"></script>
+            <!-- Material Design Lite -->
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+            <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
+            <!-- Material Design icon font -->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        </head>
+        <body>
+            <!-- Uses a transparent header that draws on top of the layout's background -->
+            <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+                <header class="mdl-layout__header mdl-layout__header--transparent">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title">DoIT - Record</span>
+                </div>
+                </header>
+                    <!-- USELESS COMMENT -->
+                <main>
+                    <div class = "Instructions">
+                        <h5> DoIT - Press start: </h5>
+                                <div id="map"></div>
+                        
+                        <script async defer
+  src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=&amp;callback=initMap">
+    </script>
+                    </div>
+                    <div class = "buttons">
+                        <button class="mdl-button mdl-js-button mdl-button--raised">
+                            <a href="../index.html">Go Back</a>
+                        </button>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                        <button class="mdl-button mdl-js-button mdl-button--raised" onclick="doIt()">
+                            Start!
+                        </button>                        
+                    </div>
+                </main>
+            </div>   
+    </body>
+</html>
