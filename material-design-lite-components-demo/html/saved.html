@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Team 051 Mobile App - Saved Runs</title>
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
+        <!-- Material Design icon font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+
+            <!-- Material Design Lite -->
+            <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+        </head>
+        <body>
+            <!-- Uses a transparent header that draws on top of the layout's background -->
+            <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+                <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                  <span class="mdl-layout-title">DoIT - Saved Runs</span>
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+              </header>
+              <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Menu</span>
+                <nav class="mdl-navigation">
+                  <a class="mdl-navigation__link" href="./index.html">Main Page</a>
+                  <a class="mdl-navigation__link" href="./record.html">Record</a>
+                  <a class="mdl-navigation__link" href="./saved.html">View</a>
+                  <a class="mdl-navigation__link" href="">Instructions</a>
+                    <a class="mdl-navigation__link" href="./login.html">Logout</a>
+                </nav>
+              </div>
+              <main class="mdl-layout__content">
+                <div style="width: 60%; margin: 0px auto;">
+                    
+                    
+                                     <div class = "saveRunListContainer">
+                        <h4> Saved Runs: </h4>
+                        <!--No runs are recorded-->
+                        <div id="No runs" style="display: none;">You have not yet recorded any runs... <br />
+                        </div>
+                        <div id="runs" style="display: none;"> 
+                            <!--To be populated through js file-->
+                        </div>
+                    </div>
+                    <div class = "buttons">
+                        <button class="mdl-button mdl-js-button mdl-button--raised">
+                             <a href="./index.html">Go Back</a>
+                        </button>
+                    </div>
+                    
+                    
+              </main>
+            </div>
+     
+            </div>
+        </body>
+        </html>     
+    <script src="js/index.js"></script>

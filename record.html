@@ -1,0 +1,72 @@
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Team 051 Mobile App - Record</title>
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
+        <!-- Material Design icon font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
+
+            <!-- Material Design Lite -->
+            <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+        <style>
+          #map {
+            width: 280px;
+            height: 300px;
+          }
+        </style>
+
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        <script src="./js/record.js"></script>
+    </head>
+        <body>
+            <!-- Uses a transparent header that draws on top of the layout's background -->
+            <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+                <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                  <span class="mdl-layout-title">DoIT - Record</span>
+                    <div class="mdl-layout-spacer"></div>
+                </div>
+              </header>
+              <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Menu</span>
+                <nav class="mdl-navigation">
+                  <a class="mdl-navigation__link" href="./index.html">Main Page</a>
+                  <a class="mdl-navigation__link" href="./record.html">Record</a>
+                  <a class="mdl-navigation__link" href="./view.html">View</a>
+                  <a class="mdl-navigation__link" href="">Instructions</a>
+                </nav>
+              </div>
+              <main class="mdl-layout__content">
+                 <div style="width: 100%; margin: 0px auto;">
+                  
+                    
+                    
+             <div class = "Instructions">
+                        <h5> DoIT - Press start: </h5>
+                                <div id="map"></div>
+                        
+                        <script async defer
+  src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=&amp;callback=initMap">
+    </script>
+                    </div>
+                    <div class = "buttons">
+                        <button class="mdl-button mdl-js-button mdl-button--raised">
+                            <a href="./index.html">Go Back</a>
+                        </button>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                        <button class="mdl-button mdl-js-button mdl-button--raised" onclick="getLocationUpdate();">
+                            Start!
+                        </button>                        
+                    </div>
+		
+              </main>
+            </div>
+     
+            </div>
+        </body>
+        </html>     
+    <script src="js/index.js"></script>
