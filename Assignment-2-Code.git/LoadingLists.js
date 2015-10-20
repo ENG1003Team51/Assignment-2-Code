@@ -8,7 +8,7 @@ function storeRouteLists(){
     var saveButton = null;
     saveButton = document.getElementById("saveButton");
 
-    var routeKey = "RouteListsLocalStorage";
+    var routeKey = "runsList";
 
     
     if (saveButton == "true"){
@@ -24,7 +24,7 @@ function loadingList(){
     var routeList;
     var listHTML = "";
     var button = null;
-    var routeKey = document.getElementById("RouteListsLocalStorage")
+    var routeKey = document.getElementById("runsList")
     button = document.getElementById("button");
     
     if(button == "true"){
